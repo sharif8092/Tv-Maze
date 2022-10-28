@@ -27,7 +27,9 @@ function Actor() {
     }
   };
   useEffect(() => {
-    getActorsData();
+    setTimeout(()=>{
+      getActorsData()
+    },2000)
   }, [inputVal]);
   // console.log(actorsData);
   return (
